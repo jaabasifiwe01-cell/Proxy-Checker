@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="./proxy-pro-preview.png" alt="Proxy Pro Advanced Main Interface" width="100%">
+
 # 🔍 Proxy Checker
 
 A fast and advanced tool for collecting, checking, and managing proxy servers.
